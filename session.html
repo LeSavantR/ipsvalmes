@@ -7,21 +7,20 @@
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
   <title>IPS Valmes</title>
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 720px)" />
 </head>
 <body>
-  <header>
-    <img src="./assets/logo.png" alt="Logo IPS Valmes">
-  </header>
   <main>
     <section>
       <img src="./assets/logo.png" alt="Logo IPS Valmes">
       <h1>Inicio de sesión</h1>
       <form action="#">
-        <label for="usuario" class="label">Usuario</label>
+        <label for="usuario" class="label label-uno">Usuario</label>
         <input class="inputName" type="text" placeholder="Usuario"/>
-        <label for="password" class="label">Contraseña</label>
-        <input type="password"  placeholder="*********"/>
-        <input type="submit" value="Confirmar" class="botonPrimario"/>
+        <label for="password" class="label label-dos">Contraseña</label>
+        <input type="password"  placeholder="Contraseña"/>
+        <p></p>
+        <button type="button" class="botonPrimario">Confirmar</button>
       </form>
     </section>
   </main>

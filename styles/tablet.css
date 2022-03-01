@@ -1,0 +1,7 @@
+/* Media Queries 720px */
+main section {
+  max-width: 690px;
+}
+form button {
+  width: 60%;
+}
