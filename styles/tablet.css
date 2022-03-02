@@ -5,3 +5,22 @@ main section {
 form button {
   width: 60%;
 }
+.primaryContent {
+  width: 90vw;
+  display: flex;
+}
+.tableContent {
+  display: inline-block;
+  width: 100vw;
+}
+/*.columnsContent {}*/
+section div.columnsSecondary {
+  display: inline-block;
+}
+section div.columnsGeneral{
+  width: 150px;
+}
+aside {
+  display: none;
+  width: 10vw;
+}

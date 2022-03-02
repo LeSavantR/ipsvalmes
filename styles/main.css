@@ -1,6 +1,7 @@
 :root {
   --color-1: #eaeaea;
   --color-2: #000000;
+  --background: #f4f4f4;
   --red-valmes: rgba(202, 0, 0, 0.34);
   --red-valmeshover: rgb(252 0 0 / 76%);
 }
@@ -11,13 +12,53 @@
 }
 html {
   font-size: 62.5%;
-  font-family: 'Cascadia Code';
+  font-family: 'Victor Mono';
   scroll-behavior: smooth;
 }
-header {
-  display: none;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
 }
-main {
+header.commonTop {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  min-height: 47px;
+  background-color: var(--color-1);
+  justify-content: space-between;
+  box-shadow: 0px 5px 24px 2px rgba(0, 0, 0, 0.17);
+}
+header.commonTop section img {
+  display: inline-block;
+  height: 40px;
+  margin-left: 15px;
+}
+header.commonTop section {
+  display: flex;
+}
+header.commonTop section a {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+header.commonTop section a img.icon {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+header.commonTop section h6 a {
+  display: inline-block;
+  width: 73px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  margin-top: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+main.login {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -31,7 +72,7 @@ main section img {
   display: block;
   margin: 20px auto;
 }
-main section {
+main section.login {
   width: 90%;
   min-height: 420px;
   margin: auto;
@@ -57,6 +98,17 @@ main section {
     box-shadow: -1px -3px 21px 5px var(--red-valmes);
     box-shadow: -1px -3px 21px 7px var(--red-valmes);
   }
+}
+main.tableContent {
+  margin-top: 15px;
+  text-align: center;
+}
+button.primaryButton {
+  margin-top: 4px;
+  padding: 4px 8px 4px 8px;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--red-valmes);
 }
 section h1 {
   font-size: 1.8rem;
@@ -101,4 +153,63 @@ form button:hover {
   background-color: var(--red-valmes);
   box-shadow: 0px 0px 5px 1px var(--red-valmes);
 /*  background-color: var(--red-valmeshover); */
+}
+.main-tables-content {
+  width: 90%;
+/*  min-width: 324px;*/
+  margin: 0 auto;
+}
+div.columnTitleG {
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 70px;
+}
+section div.columnsTitle{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+.columnsContent .module{
+  display: flex;
+  margin-top: 4px;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  text-align: left;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.2),-5px -5px 5px -1px #fff;
+}
+section div.columnsGeneral{
+  padding-top: 8px;
+  width: 70px;
+  height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/*section div.columnsPrimary{}*/
+section div.columnsSecondary{
+  display: none;
+}
+aside {
+  display: none;
+}
+footer {
+  position: absolute;
+  width: 100vw;
+  height: 30px;
+  bottom: 0;
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px -5px 24px 2px rgba(0, 0, 0, 0.17);
+}
+footer div a {
+  display: inline-block;
+  padding-top: 8px;
+  text-decoration: none;
+  color: #000000;
 }
