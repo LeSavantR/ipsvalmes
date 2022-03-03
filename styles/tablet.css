@@ -6,21 +6,41 @@ form button {
   width: 60%;
 }
 .primaryContent {
-  width: 90vw;
+  width: 100vw;
   display: flex;
 }
-.tableContent {
-  display: inline-block;
-  width: 100vw;
+header.commonTop section h6 a {
+  width: auto;
+}
+main.tableContent {
+  width: 100%;
+}
+section.main-tables-content {
+  max-width: 95%;
+}
+div.columnsTitle {
+  width: 100%;
+}
+div.columnsContent {
+  width: 100%;
 }
 /*.columnsContent {}*/
 section div.columnsSecondary {
   display: inline-block;
 }
-section div.columnsGeneral{
-  width: 150px;
+div.columnTitleG {
+  width: -webkit-fill-available;
+}
+.columnsContent .module {
+  margin-top: 8px;
 }
 aside {
   display: none;
   width: 10vw;
+}
+footer {
+  height: 45px;
+}
+footer div {
+  padding: 8px;
 }

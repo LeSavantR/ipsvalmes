@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,43 @@
   <title>Recepcion - IPS Valmes</title>
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 720px)" />
+  <script src="./src/main.js" defer></script>
 </head>
+
 <body>
   <header class="commonTop">
     <section><a href="#"><img class="logo" src="./assets/logo.png" alt="Logo IPS Valmes"></a></section>
     <section>
       <h6><a href="#">Ruben Dario Hernandez Centeno</a></h6>
-      <a href="#"><img class="icon" src="./assets/user.png" alt="Logo Users"></a>
+      <a href="#" id="buttonMenu">
+        <img class="icon" src="./assets/user-solid.svg" alt="Logo Users">
+      </a>
     </section>
   </header>
   <section class="primaryContent">
     <main class="tableContent">
       <h1>Recepción de usuarios</h1>
       <p>Usuarios pendientes: 200 </p>
-      <button class="primaryButton">Crear Usuario</button>
+      <button class="primaryButton buttonPush">Crear Usuario</button>
       <section class="main-tables-content">
         <div class="columnsTitle">
-          <div class="columnTitleG columnsSecondary">Fecha</div>
-          <div class="columnTitleG columnsPrimary">Nombre</div>
-          <div class="columnTitleG columnsPrimary">Empresa</div>
-          <div class="columnTitleG columnsPrimary">Exámenes</div>
-          <div class="columnTitleG columnsSecondary">Cédula</div>
-          <div class="columnTitleG columnsSecondary">Ciudad</div>
-          <div class="columnTitleG columnsSecondary">Cargo</div>
-          <div class="columnTitleG columnsSecondary">Tipo</div>
-          <div class="columnTitleG columnsSecondary">Médico</div>
-          <div class="columnTitleG columnsSecondary">Externos</div>
+          <div class="columnsGeneral columnsSecondary">Fecha</div>
+          <div class="columnsGeneral columnsPrimary">Nombre</div>
+          <div class="columnsGeneral columnsPrimary">Empresa</div>
+          <div class="columnsGeneral columnsPrimary">Exámenes</div>
+          <div class="columnsGeneral columnsSecondary">Cédula</div>
+          <div class="columnsGeneral columnsSecondary">Ciudad</div>
+          <div class="columnsGeneral columnsSecondary">Cargo</div>
+          <div class="columnsGeneral columnsSecondary">Tipo</div>
+          <div class="columnsGeneral columnsSecondary">Médico</div>
+          <div class="columnsGeneral columnsSecondary">Externos</div>
         </div>
         <div class="columnsContent appNode">
           <div class="module">
+            <div class="columnsGeneral columnsSecondary date">03/03/22</div>
             <div class="columnsGeneral columnsPrimary">Ruben Hernandez</div>
             <div class="columnsGeneral columnsPrimary">GCC</div>
             <div class="columnsGeneral columnsPrimary">V, A, H</div>
-            <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
@@ -49,10 +54,10 @@
             <div class="columnsGeneral columnsSecondary"></div>
           </div>
           <div class="module">
+            <div class="columnsGeneral columnsSecondary date">03/03/22</div>
             <div class="columnsGeneral columnsPrimary">Ruben Hernandez</div>
             <div class="columnsGeneral columnsPrimary">GCC</div>
             <div class="columnsGeneral columnsPrimary">V, A, H</div>
-            <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
@@ -61,10 +66,10 @@
             <div class="columnsGeneral columnsSecondary"></div>
           </div>
           <div class="module">
+            <div class="columnsGeneral columnsSecondary date">03/03/22</div>
             <div class="columnsGeneral columnsPrimary">Ruben Hernandez</div>
             <div class="columnsGeneral columnsPrimary">GCC</div>
             <div class="columnsGeneral columnsPrimary">V, A, H</div>
-            <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
             <div class="columnsGeneral columnsSecondary"></div>
@@ -75,18 +80,22 @@
         </div>
       </section>
     </main>
-    <aside>
-      <section>
-        <div><span></span> Usuarios</div>
-        <div><span></span> Busqueda</div>
-        <div><span></span> Estados</div>
-        <div><span></span> Salir</div>
-      </section>
-    </aside>
+    <div class="menu_side">
+      <ul id="menu">
+        <li><span id="user"></span><a href="#">Usuarios</a></li>
+        <li><span id="search"></span><a href="#">Búsqueda</a></li>
+        <li><span id="rates"></span><a href="#">Tarifas</a></li>
+        <li><span id="bills"></span><a href="#">Facturas</a></li>
+        <li><span id="links"></span><a href="#">Enlaces</a></li>
+        <li><span id="status"></span><a href="#">Estado</a></li>
+        <li><span id="logout"></span><a href="#">Salir</a></li>
+      </ul>
+    </div>
   </section>
   <footer>
     <div><a href="#">Contacto +57 300 000 0000</a></div>
     <div><a href="#">Todos los derechos reservados</a></div>
   </footer>
 </body>
+
 </html>
