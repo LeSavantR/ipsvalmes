@@ -1,9 +1,31 @@
+/* General Colors */
+:root {
+  --color-1: #eaeaea;
+  --color-2: #000000;
+  --background: #f4f4f4;
+  --red-valmes: rgba(202, 0, 0, 0.34);
+  --red-valmeshover: rgb(252 0 0 / 76%);
+}
 /* Media Queries 720px */
 main section {
   max-width: 690px;
 }
 form button {
   width: 60%;
+}
+.menu_bar {
+  display: block;
+  background-color: var(--red-valmes);
+}
+ul.menu li {
+  background-color: transparent;
+}
+.menu {
+  justify-content: space-around;
+}
+.menu li:hover {
+  background-color: var(--color-1);
+  color: var(--red-valmes);
 }
 .primaryContent {
   width: 100vw;
