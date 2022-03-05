@@ -26,6 +26,7 @@ ul.menu li {
 .menu li:hover {
   background-color: var(--color-1);
   color: var(--red-valmes);
+  border-radius: 0;
 }
 .primaryContent {
   width: 100vw;

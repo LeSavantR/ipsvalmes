@@ -79,6 +79,7 @@ ul.menu li {
   border-radius: 8px;
   list-style: none;
   background-color: var(--red-valmes);
+  cursor: pointer;
 }
 .menu {
   display: flex;
@@ -88,9 +89,6 @@ ul.menu li {
   overscroll-behavior-x: contain;
   white-space: nowrap;
   gap: 4px;
-}
-.menu li {
-  cursor: pointer;
 }
 .menu li a {
   color: var(--color-2);
