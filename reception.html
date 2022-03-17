@@ -23,43 +23,55 @@
     </section>
   </header>
   <nav class="menu_bar">
-    <!--  Nuevo diseño de navbar, impplementacion de submmeús  -->
+    <!--  Nuevo diseño de navbar, impplementacion de submmenús  -->
       <ul class="menu">
-        <li class="hoverSection"><span id="user"></span><a href="#">Inicio</a></li>
-        <li class="hoverSection submenu">
-          <span id="search"></span><a href="#">Administración</a>
-          <ul>
-            <li>Modificar</li>
-            <li></li>
-            <li></li>
+        <li class="hoverSection">
+          <span id="home"></span>
+          <a href="#">Inicio</a>
+        </li>
+        <li class="hoverSection menu-title">
+          <span id="admin"></span><a href="#">Administración</a>
+          <ul class="submenu">
+            <li><a href="#">Pass</a></li>
+            <li><a href="#">Pass</a></li>
+            <li><a href="#">Pass</a></li>
           </ul>
         </li>
-        <li class="hoverSection submenu">
-          <span id="rates"></span><a href="#">Recepción</a>
-          <ul>
-            <li>Creación de solicitudes</li>
-            <li>Recibimiento de solicitudes</li>
+        <li class="hoverSection menu-title">
+          <span id="users"></span>
+          <a href="#">Recepción</a>
+          <ul class="submenu">
+            <li><a href="#">Creación de solicitudes</a></li>
+            <li><a href="#">Recibimiento de solicitudes</a></li>
           </ul>
         </li>
-        <li class="hoverSection submenu">
-          <span id="bills"></span><a href="#">Exámenes</a>
-          <ul>
-            <li>Laboratorio</li>
-            <li>Visiometria</li>
-            <li>Audiometria</li>
-            <li>Físico</li>
-            <li>Toxicológico</li>
-            <li>Trabajo Seguro en Alturas</li>
-          </ul>
-        <li class="hoverSection submenu">
-          <span id="links"></span><a href="#">Consultas</a>
-          <ul>
-            <li>Paciente</li>
-            <li>Fecha</li>
+        <li class="hoverSection menu-title">
+          <span id="results"></span><a href="#">Exámenes</a>
+          <ul class="submenu">
+            <li><a href="#">Exámen Medico</a></li>
+            <li><a href="#">Visiometría</a></li>
+            <li><a href="#">Ver Todos</a></li>
           </ul>
         </li>
-        <li class="hoverSection"><span id="status"></span><a href="#">Facturación</a></li>
-        <li class="hoverSection"><span id="logout"></span><a href="#">Salir</a></li>
+        <li class="hoverSection menu-title">
+          <span id="search"></span><a href="#">Consultas</a>
+          <ul class="submenu">
+            <li><a href="#">Paciente</a></li>
+            <li><a href="#">Fecha</a></li>
+          </ul>
+        </li>
+        <li class="hoverSection menu-title">
+          <span id="bills"></span><a href="#">Facturación</a>
+          <ul class="submenu">
+            <li><a href="#">Facturas Pendientes</a></li>
+            <li><a href="#">Facturas Vencidas</a></li>
+            <li><a href="#">Facturas Pagadas</a></li>
+          </ul>
+        </li>
+        <li class="hoverSection">
+          <span id="logout"></span>
+          <a href="#">Salir</a>
+        </li>
       </ul>
     </nav>
   <section class="primaryContent">

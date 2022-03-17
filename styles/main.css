@@ -19,7 +19,10 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--background);
+  background-image: url(../assets/abstract-white-color-canvas-wallpaper-textures-surface\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Header style generic */
@@ -103,12 +106,45 @@ ul.menu li {
   text-align: center;
   background-color: var(--red-valmeshover);
 }
-#user {
+.menu li:hover > .submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+#home {
   display: inline-block;
   width: 20px;
   height: 15px;
   margin-right: 4px;
-  background-image: url(../assets/user-solid.svg);
+  background-image: url(../assets/house-user-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#admin {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  background-image: url(../assets/building-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#users {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  background-image: url(../assets/house-user-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#results {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  background-image: url(../assets/list-check-solid.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -121,39 +157,12 @@ ul.menu li {
   background-position: center;
   background-repeat: no-repeat;
 }
-#rates {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 4px;
-  background-image: url(../assets/dollar-sign-solid.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
 #bills {
   display: inline-block;
   width: 15px;
   height: 15px;
   margin-right: 4px;
   background-image: url(../assets/file-invoice-dollar-solid.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#links {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 4px;
-  background-image: url(../assets/link-solid.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#status {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 4px;
-  background-image: url(../assets/arrows-rotate-solid.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -165,6 +174,9 @@ ul.menu li {
   background-image: url(../assets/right-from-bracket-solid.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+.submenu {
+  display: none;
 }
 
 /* Generic Hover*/
